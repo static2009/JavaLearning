@@ -3,7 +3,7 @@ public class Animal {
 	//Class Variables
 	String animalType;
 	String animalBreed;
-	Double animalAge;
+	int animalAge;
 	Double animalWeight;
 	Double animalHeight;
 	
@@ -15,11 +15,19 @@ public class Animal {
 	public Animal(String info) {
 		this.animalType = info;
 	}
+	
+	public Animal(int age) {
+		this.animalAge = age;
+	}
+	
+	public void type() {
+		System.out.println(animalType);
+	}
 
 	
 	public static void main(String[] args) {
-		Animal animal1 = new Animal("Bear");
-		System.out.println(animal1);
+		Animal Bear = new Animal("Bear");
+		System.out.println(Bear);
 		
 	}
 	
