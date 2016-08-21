@@ -1,30 +1,28 @@
 import java.util.Scanner;
 public class IntsAndOpsv2 {
-	Scanner x = new Scanner(System.in);
-	Scanner y = new Scanner(System.in);
-	Scanner userOperator = new Scanner(System.in);
 	
 	public IntsAndOpsv2()
 	{
 		
 	}
 	
-	//Set Variables
-	public void integers(int first , int second)
-	{
-		this.x = first;
-		this.y = second;
-	}
+
 	
-	//Set Which Operator to use
-	public operators(String operator)
+	public void main(String[] args)
 	{
+		Scanner x = new Scanner(System.in);
+		int first = x.nextInt();
+		Scanner y = new Scanner(System.in);
+		int second = x.nextInt();
+		Scanner userOperator = new Scanner(System.in);
+		String operator = userOperator.next();
 		
-	}
-	
-	//Perform the operations
-	public void addition()
-	{
+		System.out.println(first);
+		System.out.println(second);
+		System.out.println(operator);
 		
+		x.close();
+		y.close();
+		userOperator.close();
 	}
 }
