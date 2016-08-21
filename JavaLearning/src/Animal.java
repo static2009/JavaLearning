@@ -4,12 +4,9 @@ public class Animal
 {
 	
 	//Class Variables
-	String animalType;
-	String animalBreed;
+	String animalType , animalBreed , a = "missing";
 	int animalAge;
-	float animalWeight;
-	float animalHeight;
-	String a = "missing";
+	float animalWeight , animalHeight;
 	
 	//Class Constructors
 	public Animal() 
@@ -17,7 +14,7 @@ public class Animal
 
 	}
 	
-	public Animal(String type, String breed) 
+	public Animal(String type , String breed) 
 	{
 		this.animalType = type;
 		this.animalBreed = breed;
