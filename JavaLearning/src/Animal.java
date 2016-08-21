@@ -1,3 +1,5 @@
+
+
 public class Animal 
 {
 	
@@ -5,8 +7,8 @@ public class Animal
 	String animalType;
 	String animalBreed;
 	int animalAge;
-	Double animalWeight;
-	Double animalHeight;
+	float animalWeight;
+	float animalHeight;
 	String a = "missing";
 	
 	//Class Constructors
@@ -26,7 +28,7 @@ public class Animal
 		this.animalAge = age;
 	}
 	
-	public Animal(Double weight, Double height) 
+	public Animal(float weight, float height) 
 	{
 		this.animalWeight = weight;
 		this.animalHeight = height;
