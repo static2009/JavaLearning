@@ -1,13 +1,12 @@
+
+
 public class Animal 
 {
 	
 	//Class Variables
-	String animalType;
-	String animalBreed;
+	String animalType , animalBreed , a = "missing";
 	int animalAge;
-	Double animalWeight;
-	Double animalHeight;
-	String a = "missing";
+	float animalWeight , animalHeight;
 	
 	//Class Constructors
 	public Animal() 
@@ -15,7 +14,7 @@ public class Animal
 
 	}
 	
-	public Animal(String type, String breed) 
+	public Animal(String type , String breed) 
 	{
 		this.animalType = type;
 		this.animalBreed = breed;
@@ -26,7 +25,7 @@ public class Animal
 		this.animalAge = age;
 	}
 	
-	public Animal(Double weight, Double height) 
+	public Animal(float weight, float height) 
 	{
 		this.animalWeight = weight;
 		this.animalHeight = height;
