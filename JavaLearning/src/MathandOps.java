@@ -6,10 +6,6 @@ public class MathandOps
 
 	int x , y , z;
 	
-	public MathandOps()
-	{
-		
-	}
 		public static void Addition() 
 		{
 			Scanner add1 = new Scanner(System.in);
@@ -48,22 +44,25 @@ public class MathandOps
 			
 			div1.close();
 		}
-		
-		public static void Operator()
-		{
-			Scanner operator = new Scanner(System.in);
-			System.out.println("Define operator: ");
-			String test = operator.nextLine();
-			
-			operator.close();
-		}
 	
 	public static void main(String[] args)
 	{
+		Scanner operator = new Scanner(System.in);
+		System.out.println("Define Operator: ");
+		String user_input = operator.nextLine();
 		
-		MathandOps.Addition();
-		MathandOps.Subtraction();
-		MathandOps.Division();
+		switch (user_input.toLowerCase())
+		{
+			case  "addition": Addition();
+				break;
+			case "subtraction": Subtraction();
+				break;
+			case "division": Division();
+				break;
+			
+		}
+		
+		operator.close();
 	}
 	
 }
