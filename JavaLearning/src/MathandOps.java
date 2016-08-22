@@ -6,53 +6,63 @@ public class MathandOps
 
 	int x , y , z;
 	
-	public MathandOps()
-	{
-		
-	}
-		public void Addition() 
+		public static void Addition() 
 		{
 			Scanner add1 = new Scanner(System.in);
+			System.out.println("First value: ");
 			int x = add1.nextInt();
-			Scanner add2 = new Scanner(System.in);
-			int y = add2.nextInt();
+			System.out.println("Second value: ");
+			int y = add1.nextInt();
 			int sum = x + y;
-			System.out.println("Sum of " + x + "and " + y + "is " + sum);
+			System.out.println("Sum of " + x + " and " + y + " is " + sum);
 			
 			add1.close();
-			add2.close();
 		}
 		
-		public void Subtraction()
+		public static void Subtraction()
 		{
 			Scanner sub1 = new Scanner(System.in);
+			System.out.println("First value: ");
 			int x = sub1.nextInt();
-			Scanner sub2 = new Scanner(System.in);
-			int y = sub2.nextInt();
+			System.out.println("Second value: ");
+			int y = sub1.nextInt();
 			int difference = x - y;
-			System.out.println("Difference of " + x + "and " + y + "is " + difference);
+			System.out.println("Difference of " + x + " and " + y + " is " + difference);
 			
 			sub1.close();
-			sub2.close();
 		}
 		
-		public void Division()
+		public static void Division()
 		{
 			Scanner div1 = new Scanner(System.in);
+			System.out.println("First value: ");
 			int x = div1.nextInt();
-			Scanner div2 = new Scanner(System.in);
+			System.out.println("Second value: ");
 			int y = div1.nextInt();
 			int division = x / y;
-			System.out.println("Division of " + x + "and " + y + "is " + division);
+			System.out.println("Division of " + x + " and " + y + " is " + division);
 			
 			div1.close();
-			div2.close();
 		}
 	
-	public void main(String[] args)
+	public static void main(String[] args)
 	{
-		MathandOps Test = new MathandOps();
-		System.out.println(Test);
+		Scanner operator = new Scanner(System.in);
+		System.out.println("Define Operator: ");
+		String user_input = operator.nextLine();
+		
+		switch (user_input.toLowerCase())
+		{
+			case  "addition": Addition();
+				break;
+			case "subtraction": Subtraction();
+				break;
+			case "division": Division();
+				break;
+			
+		}
+		
+		operator.close();
 	}
 	
 }
