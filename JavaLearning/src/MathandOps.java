@@ -59,8 +59,7 @@ public class MathandOps
 				break;
 			case "division": Division();
 				break;
-			default: System.out.println("You're a failure!");
-				break;
+			
 		}
 		
 		operator.close();
