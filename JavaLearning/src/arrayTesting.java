@@ -32,7 +32,7 @@ public class arrayTesting
 	        System.arraycopy(copyFrom, 2, copyTo, 0, 7);
 	        System.out.println(copyTo);
 	}
-	public static void array4()
+/*	public static void array4()
 	{
 		//create the array
 		String[] arr4 = {"arrays ", "are ", "weird ", "as ", "fuck "};
@@ -42,6 +42,14 @@ public class arrayTesting
 		System.arraycopy(arr4, 0, test, 0, arr4.length);
 		//print something out to a string..? Print out a new string using the range of elements in the array?
 		System.out.println(test);
+	}
+*/
+	public static void array4()
+	{
+		char[] arr4 = {'a', 'b', 'c', 'd', 'e', 'f'};
+		char[] arrCopy = new char[3];
+		System.arraycopy(arr4, 1, arrCopy, 1, 3);
+		System.out.println(new String(arrCopy));
 	}
 	public static void main(String[] args)
 	{
