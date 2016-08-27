@@ -48,9 +48,27 @@ public class arrayTesting
 	{
 		char[] arr4 = {'a', 'b', 'c', 'd', 'e', 'f'};
 		char[] arrCopy = new char[3];
-		System.arraycopy(arr4, 1, arrCopy, 1, 3);
-		System.out.println(new String(arrCopy));
+		System.arraycopy(arr4, 1, arrCopy, 0, 3);
+		System.out.println(arrCopy);
 	}
+	public static void array5()
+    {
+        System.out.println("array5 test area...");
+        int[][] arr3 = 
+        {
+            {10, 20, 30}, {1, 3, 5}
+        };
+        
+        int[][] arr3c = new int[1][];
+        System.arraycopy(arr3, 0, arr3c, 0, 1);
+
+        System.out.println(arr3c[0][2]); // prints 30
+        arr3[0][2] = 4321;
+        System.out.println(arr3[0][2]); // prints 4321
+        System.out.println(arr3c[0][2]); // prints 4321
+        
+        System.out.println("end array5 test area");
+    }
 	public static void main(String[] args)
 	{
 		//Call the array methods to test the arrays
@@ -61,5 +79,6 @@ public class arrayTesting
 		ArrayCopyDemo();
 		//Broken self-written using strings instead of chars
 		array4();
+		array5();
 	}
 }
