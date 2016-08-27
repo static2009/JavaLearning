@@ -36,11 +36,11 @@ public class arrayTesting
 		//create the array
 		String[] arr4 = {"arrays ", "are ", "weird ", "as ", "fuck "};
 		//no idea what this does
-		String[] test = new String[3];
+		String[] test = new String[arr4.length];
 		//set the range on the array. Attempting to grab "arrays are weird"
-		System.arraycopy(arr4, 0, test, 0, 3);
+		System.arraycopy(arr4, 0, test, 0, arr4.length);
 		//print something out to a string..? Print out a new string using the range of elements in the array?
-		System.out.println(new String(test));
+		System.out.println();
 	}
 	public static void main(String[] args)
 	{
