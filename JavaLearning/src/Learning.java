@@ -60,10 +60,8 @@ public class Learning {
 		System.out.println(bass++); //should print 18
 		System.out.println(bass--); //should print 19
 		System.out.println(bass); //should print 18
-		
 		ahi += 3;
 		System.out.println(ahi); //should print 13
-		
 		swordfish += salmon;
 		System.out.println(swordfish); //adds swordfish and salmon together to result in 7
 		
@@ -71,7 +69,6 @@ public class Learning {
 		int fnum = 6;
 		int snum = 9;
 		int tnum = 3;
-		
 		if (fnum == 9) {
 			System.out.println("yes");
 		}else{
@@ -89,6 +86,7 @@ public class Learning {
 			System.out.println("yes");
 		}
 		*/
+		
 		//TNB #11
 		int boy, girl;
 		boy = 18;
@@ -99,7 +97,6 @@ public class Learning {
 		}else{
 			System.out.println("YOU. SHALL NOT. PASS!!");
 		}
-		
 		int cat, dog;
 		cat = 3;
 		dog = 15;
