@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class MathandOps 
@@ -44,6 +43,32 @@ public class MathandOps
 			
 			div1.close();
 		}
+		
+		public static void Multiplication()
+		{
+			Scanner mult1 = new Scanner(System.in);
+			System.out.println("First value: ");
+			int x = mult1.nextInt();
+			System.out.println("Second value: ");
+			int y = mult1.nextInt();
+			int multiplication = x * y;
+			System.out.println("Multiplication of " + x + " and " + y + " is " + multiplication);
+			
+			mult1.close();
+		}
+		
+		public static void Modulos()
+		{
+			Scanner mod1 = new Scanner(System.in);
+			System.out.println("First value: ");
+			int x = mod1.nextInt();
+			System.out.println("Second value: ");
+			int y = mod1.nextInt();
+			int modulos = x % y;
+			System.out.println("Modulos of " + x + " and " + y + " is " + modulos);
+			
+			mod1.close();
+		}
 	
 	public static void main(String[] args)
 	{
@@ -58,6 +83,12 @@ public class MathandOps
 			case "subtraction": Subtraction();
 				break;
 			case "division": Division();
+				break;
+			case "multiplication": Multiplication();
+				break;
+			case "modulos": Modulos();
+				break;
+			default: System.out.println("You're a failure!");
 				break;
 			
 		}
