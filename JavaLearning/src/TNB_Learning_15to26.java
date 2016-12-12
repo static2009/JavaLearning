@@ -6,8 +6,8 @@ public class TNB_Learning_15to26 {
 		/* TNB #15
 		tuna tunaObject = new tuna();
 		tunaObject.simpleMessage();
-		
-		TNB #16
+		*/
+		//TNB #16
 		Scanner input = new Scanner (System.in);
 		tuna tunaObject = new tuna();
 		
@@ -44,7 +44,7 @@ public class TNB_Learning_15to26 {
 				System.out.println("You aren't really that old");
 			}
 		}
-
+/*
 		//TNB #19
 		int age = 45;
 		
