@@ -6,7 +6,7 @@ public class TNB_Learning_15to26 {
 		/* TNB #15
 		tuna tunaObject = new tuna();
 		tunaObject.simpleMessage();
-		*/
+
 		//TNB #16
 		Scanner input = new Scanner (System.in);
 		tuna tunaObject = new tuna();

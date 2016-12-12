@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calc2 {
 	public static void main(String[] args){
-		switch(){
+		/*switch(){
 		case 0: addition();
 		break;
 		case 1: subtraction();
@@ -14,7 +14,7 @@ public class Calc2 {
 		case 4: modulus();
 		break;
 		default: choice();
-		}
+		}*/
 	}
 	//methods for math
 	public static void addition(){
@@ -38,11 +38,11 @@ public class Calc2 {
 	}
 	public static void choice(){
 		System.out.println("Please select an operator: ");
-		if(name != String){
+		/*if(name != String){
 			System.out.println("Please select an option!");
 		}else{
 			System.out.println("Thanks for your selection!");
-		}
+		}*/
 	}
 	//Methods for errors
 	public void errors(){
