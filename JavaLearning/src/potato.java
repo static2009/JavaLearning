@@ -1,7 +1,10 @@
 public enum potato {
-	fries("awesome", "20"),
+	fried("awesome", "20"),
 	mashed("yummy", "10"),
-	baked("tasty", "450");
+	baked("tasty", "450"),
+	skinned("delish", "400"),
+	roasted("amazing", "15"),
+	country("yup", "13");
 	
 	private final String desc;
 	private final String amount;
